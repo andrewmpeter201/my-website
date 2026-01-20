@@ -1,77 +1,84 @@
-/* assets/css/style.css */
 body {
   font-family: 'Inter', sans-serif;
   color: #212529;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
-.navbar {
-  background-color: #0d1b2a;
-}
+/* Navbar */
+.navbar { background: rgba(13,27,42,0.95); }
+.navbar-brand img { height: 40px; }
 
-.hero-section {
-  background: linear-gradient(135deg, #0d1b2a, #1b263b);
-  padding: 180px 0 140px;
-}
-
-.hero-actions .btn {
-  margin-top: 15px;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.btn-accent {
-  background-color: #3a86ff;
+/* Floating WhatsApp & Phone Buttons */
+.whatsapp-btn, .phone-btn {
+  position: fixed;
+  right: 20px;
+  border-radius: 50%;
   color: #fff;
-  border: none;
-  transition: all 0.3s ease;
+  font-size: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
+.whatsapp-btn { bottom: 20px; background: #25d366; }
+.phone-btn { bottom: 90px; background: #3a86ff; }
 
-.btn-accent:hover {
-  transform: translateY(-3px);
-  background-color: #2f6fe0;
+/* Hero */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #0d1b2a url('../images/your-photo.jpg') no-repeat center center/cover;
 }
+.hero-overlay {
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(13,27,42,0.6);
+}
+.hero-content { position: relative; z-index: 2; color: #fff; padding: 0 20px; }
+.hero-image { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #3a86ff; margin-bottom: 20px; }
 
+/* Section */
+.section { padding: 80px 0; }
+
+/* Service Cards */
 .service-card {
-  background: #fff;
+  background: rgba(255,255,255,0.95);
   padding: 30px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .3s;
+  color: #212529;
+}
+.service-card i { font-size: 2.5rem; color: #3a86ff; margin-bottom: 15px; }
+.service-card:hover { transform: translateY(-10px); }
+
+/* Buttons */
+.btn-accent { background: #3a86ff; color: #fff; border: none; transition: .2s; }
+.btn-accent:hover { transform: translateY(-3px); }
+.btn-outline-light { border-color: #fff; color: #fff; }
+.btn-outline-light:hover { background: #3a86ff; border-color: #3a86ff; }
+
+/* Footer */
+.footer { background: #0d1b2a; padding: 25px 0; text-align: center; color: #fff; }
+
+/* Projects images */
+#work img { width: 100%; height: auto; }
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-}
-
-.service-card i {
-  font-size: 2.5rem;
-  color: #3a86ff;
-  margin-bottom: 15px;
-}
-
-.info-card,
-.highlight-card {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.cta-section {
-  background: #1b263b;
-  padding: 70px 0;
-}
-
-.footer {
-  background: #0d1b2a;
-  padding: 25px 0;
-}
-
-.footer a {
-  text-decoration: none;
+@media (max-width: 576px) {
+  .hero { height: 70vh; }
+  .hero-image { width: 120px; height: 120px; }
+  .service-card { padding: 20px; }
 }
