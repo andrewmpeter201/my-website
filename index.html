@@ -7,15 +7,10 @@
   <meta name="description" content="Cypher Tech Solutions provides smart digital, IT, cybersecurity, and design services for modern businesses.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -23,14 +18,16 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Cypher Tech Solutions</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link btn btn-accent ms-lg-3" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-accent ms-lg-3" href="contact.html">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -40,21 +37,37 @@
   <div class="container text-center" data-aos="fade-up">
     <h1 class="display-4 fw-bold">Cypher Tech Solutions</h1>
     <p class="lead">Smart Digital Solutions for Modern Businesses</p>
-    <a href="contact.html" class="btn btn-lg btn-accent mt-3">Contact Us</a>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-lg btn-accent me-3">Contact Us</a>
+      <a href="tel:07915606500" class="btn btn-lg btn-outline-light">
+        <i class="fas fa-phone"></i> Call Us
+      </a>
+    </div>
   </div>
 </header>
 
 <section class="section">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-4">
       <div class="col-md-6" data-aos="fade-right">
-        <h2>About Us</h2>
-        <p>Cypher Tech Solutions delivers secure, efficient, and innovative technology services designed to help businesses thrive in a digital world.</p>
+        <h2>About Cypher Tech Solutions</h2>
+        <p>
+          We help businesses stay secure, modern, and efficient through expert IT,
+          cybersecurity, digital design, and automation services.
+        </p>
+        <p class="fw-semibold">
+          <i class="fas fa-envelope text-accent"></i>
+          <a href="mailto:andrewmpeter201@gmail.com">andrewmpeter201@gmail.com</a><br>
+          <i class="fas fa-phone text-accent"></i>
+          <a href="tel:07915606500">07915 606500</a>
+        </p>
       </div>
       <div class="col-md-6" data-aos="fade-left">
-        <div class="info-card">
-          <i class="fas fa-shield-halved fa-3x mb-3 text-accent"></i>
-          <p>We combine expertise, reliability, and forward-thinking strategies.</p>
+        <div class="highlight-card">
+          <h5>Trusted Technology Partner</h5>
+          <p>
+            We deliver reliable, scalable, and secure solutions tailored to your needs.
+          </p>
         </div>
       </div>
     </div>
@@ -63,27 +76,27 @@
 
 <section class="section bg-light">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Our Services</h2>
+    <h2 class="text-center mb-5" data-aos="fade-up">Our Core Services</h2>
     <div class="row g-4">
       <div class="col-md-4" data-aos="zoom-in">
         <div class="service-card">
-          <i class="fas fa-lock"></i>
+          <i class="fas fa-shield-halved"></i>
           <h5>Cyber Services</h5>
-          <p>Security audits, protection, and recovery.</p>
+          <p>Security audits, protection, and data recovery.</p>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in">
         <div class="service-card">
           <i class="fas fa-paint-brush"></i>
           <h5>Graphic Design</h5>
-          <p>Branding and visual communication.</p>
+          <p>Branding, posters, and social media designs.</p>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in">
         <div class="service-card">
           <i class="fas fa-desktop"></i>
           <h5>IT Support</h5>
-          <p>Reliable setup and troubleshooting.</p>
+          <p>PCs, networks, printers, and troubleshooting.</p>
         </div>
       </div>
     </div>
@@ -94,39 +107,34 @@
   <div class="container">
     <h2 class="text-center mb-5" data-aos="fade-up">Why Choose Us</h2>
     <div class="row g-4">
-      <div class="col-md-3" data-aos="flip-left">
-        <div class="info-card">Expert Team</div>
-      </div>
-      <div class="col-md-3" data-aos="flip-left">
-        <div class="info-card">Secure Solutions</div>
-      </div>
-      <div class="col-md-3" data-aos="flip-left">
-        <div class="info-card">Modern Technology</div>
-      </div>
-      <div class="col-md-3" data-aos="flip-left">
-        <div class="info-card">Client Focused</div>
-      </div>
+      <div class="col-md-3" data-aos="flip-left"><div class="info-card">Experienced Professionals</div></div>
+      <div class="col-md-3" data-aos="flip-left"><div class="info-card">Strong Security Focus</div></div>
+      <div class="col-md-3" data-aos="flip-left"><div class="info-card">Fast Response Time</div></div>
+      <div class="col-md-3" data-aos="flip-left"><div class="info-card">Affordable Solutions</div></div>
     </div>
-  </div>
-</section>
-
-<section class="section bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5">Testimonials</h2>
-    <p class="text-center fst-italic">"Professional, secure, and efficient solutions!"</p>
   </div>
 </section>
 
 <section class="cta-section text-white text-center">
   <div class="container">
-    <h2>Ready to get started?</h2>
-    <a href="contact.html" class="btn btn-lg btn-accent mt-3">Get in Touch</a>
+    <h2>Need Reliable Tech Support?</h2>
+    <p>Call or message us today and let’s get started.</p>
+    <a href="tel:07915606500" class="btn btn-lg btn-accent mt-3">
+      <i class="fas fa-phone"></i> 07915 606500
+    </a>
   </div>
 </section>
 
 <footer class="footer text-white">
   <div class="container text-center">
-    <p>&copy; 2026 Cypher Tech Solutions. All rights reserved.</p>
+    <p>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:andrewmpeter201@gmail.com" class="text-white">andrewmpeter201@gmail.com</a>
+      |
+      <i class="fas fa-phone"></i>
+      <a href="tel:07915606500" class="text-white">07915 606500</a>
+    </p>
+    <p>&copy; 2026 Cypher Tech Solutions</p>
   </div>
 </footer>
 
