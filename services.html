@@ -1,23 +1,55 @@
+<!-- services.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Services | Cypher Tech Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-<img src="assets/images/logo.png" height="40">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Cypher Tech Solutions</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<section class="service-slider">
-  <div class="service-slide active">Web Development</div>
-  <div class="service-slide">Cyber Services</div>
-  <div class="service-slide">Graphic Design</div>
-  <div class="service-slide">Data Analytics</div>
-  <div class="service-slide">Social Media Management</div>
+<section class="section mt-5 pt-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Our Services</h1>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in"><div class="service-card"><i class="fas fa-lock"></i><h5>Cyber Services</h5><p>Security, audits, protection, recovery.</p></div></div>
+      <div class="col-md-4" data-aos="zoom-in"><div class="service-card"><i class="fas fa-palette"></i><h5>Graphic Design</h5><p>Branding, posters, social media.</p></div></div>
+      <div class="col-md-4" data-aos="zoom-in"><div class="service-card"><i class="fas fa-network-wired"></i><h5>IT Support & Setup</h5><p>PCs, networks, printers.</p></div></div>
+      <div class="col-md-4" data-aos="zoom-in"><div class="service-card"><i class="fas fa-globe"></i><h5>Website Setup</h5><p>Static websites & maintenance.</p></div></div>
+      <div class="col-md-4" data-aos="zoom-in"><div class="service-card"><i class="fas fa-cogs"></i><h5>Digital Solutions</h5><p>Automation, training, documentation.</p></div></div>
+    </div>
+  </div>
 </section>
 
+<footer class="footer text-white">
+  <div class="container text-center">
+    <p>&copy; 2026 Cypher Tech Solutions</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
