@@ -11,7 +11,11 @@ body {
 
 .hero-section {
   background: linear-gradient(135deg, #0d1b2a, #1b263b);
-  padding: 160px 0;
+  padding: 180px 0 140px;
+}
+
+.hero-actions .btn {
+  margin-top: 15px;
 }
 
 .section {
@@ -22,24 +26,25 @@ body {
   background-color: #3a86ff;
   color: #fff;
   border: none;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-accent:hover {
   transform: translateY(-3px);
+  background-color: #2f6fe0;
 }
 
 .service-card {
   background: #fff;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
 .service-card i {
@@ -48,20 +53,25 @@ body {
   margin-bottom: 15px;
 }
 
-.info-card {
+.info-card,
+.highlight-card {
   background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
 }
 
 .cta-section {
   background: #1b263b;
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .footer {
   background: #0d1b2a;
-  padding: 20px 0;
+  padding: 25px 0;
+}
+
+.footer a {
+  text-decoration: none;
 }
