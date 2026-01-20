@@ -1,84 +1,40 @@
-body {
-  font-family: 'Inter', sans-serif;
-  color: #212529;
-  margin: 0;
-  scroll-behavior: smooth;
-}
-
-/* Navbar */
-.navbar { background: rgba(13,27,42,0.95); }
-.navbar-brand img { height: 40px; }
-
-/* Floating WhatsApp & Phone Buttons */
-.whatsapp-btn, .phone-btn {
-  position: fixed;
-  right: 20px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 24px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-}
-.whatsapp-btn { bottom: 20px; background: #25d366; }
-.phone-btn { bottom: 90px; background: #3a86ff; }
-
-/* Hero */
+/* Hero Section */
 .hero {
   position: relative;
   height: 90vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Hero headline at top */
   justify-content: center;
   text-align: center;
   background: #0d1b2a url('../images/your-photo.jpg') no-repeat center center/cover;
+  padding-top: 100px; /* space below navbar */
 }
 .hero-overlay {
   position: absolute;
   top:0; left:0; right:0; bottom:0;
-  background: rgba(13,27,42,0.6);
+  background: rgba(13,27,42,0.7);
 }
-.hero-content { position: relative; z-index: 2; color: #fff; padding: 0 20px; }
-.hero-image { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #3a86ff; margin-bottom: 20px; }
+.hero-content { position: relative; z-index: 2; padding: 0 20px; }
+.hero-content h1 { font-family: 'Poppins', sans-serif; font-size: 4rem; font-weight: 700; color: #fff; margin-bottom: 20px; }
+.hero-content .slogan { color: #4CAF50; font-size: 1.5rem; font-weight: 600; margin-bottom: 30px; }
 
-/* Section */
-.section { padding: 80px 0; }
+/* Hero Buttons */
+.btn-start { background: #FF6600; color: #fff; border: none; transition: .2s; }
+.btn-start:hover { background: #e65c00; }
+.btn-call { background: #FF6600; color: #fff; border: none; transition: .2s; }
+.btn-call:hover { background: #e65c00; }
 
 /* Service Cards */
-.service-card {
-  background: rgba(255,255,255,0.95);
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,.08);
-  transition: .3s;
-  color: #212529;
-}
+.service-card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,.08); transition: .3s; }
 .service-card i { font-size: 2.5rem; color: #3a86ff; margin-bottom: 15px; }
 .service-card:hover { transform: translateY(-10px); }
 
-/* Buttons */
-.btn-accent { background: #3a86ff; color: #fff; border: none; transition: .2s; }
-.btn-accent:hover { transform: translateY(-3px); }
-.btn-outline-light { border-color: #fff; color: #fff; }
-.btn-outline-light:hover { background: #3a86ff; border-color: #3a86ff; }
-
-/* Footer */
-.footer { background: #0d1b2a; padding: 25px 0; text-align: center; color: #fff; }
-
-/* Projects images */
-#work img { width: 100%; height: auto; }
-
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 991px) {
-  .hero-content h1 { font-size: 2rem; }
-  .hero-content p { font-size: 1rem; }
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content .slogan { font-size: 1.25rem; }
 }
-
 @media (max-width: 576px) {
-  .hero { height: 70vh; }
-  .hero-image { width: 120px; height: 120px; }
-  .service-card { padding: 20px; }
+  .hero-content h1 { font-size: 2.2rem; }
+  .hero-content .slogan { font-size: 1rem; }
 }
