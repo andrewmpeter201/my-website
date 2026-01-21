@@ -1,9 +1,1 @@
-// assets/js/main.js
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.AOS) {
-    AOS.init({
-      duration: 900,
-      once: true
-    });
-  }
-});
+// For services animation if needed in the future
