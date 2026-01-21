@@ -1,15 +1,58 @@
-.slide-card {
+/* Hero Slider */
+.hero-slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-slider .slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
   opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.hero-slider .slide.active { opacity:1; }
+
+.hero-content {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  text-shadow:0 4px 8px rgba(0,0,0,0.6);
+  z-index:10;
+}
+
+.hero-title { font-family:'Poppins', sans-serif; font-size:3rem; color:#2F80ED; }
+.hero-slogan { font-size:1.5rem; color:#1ABC9C; margin-bottom:20px; }
+
+/* Buttons */
+.btn-orange { background:#FF7F50; color:white; padding:12px 25px; }
+.btn-teal   { background:#1ABC9C; color:white; padding:12px 25px; }
+
+/* Services Cards Animation */
+.slide-card {
+  opacity:0;
   transform: translateY(30px);
   transition: all 0.6s ease;
   background: rgba(255,255,255,0.1);
   padding:20px;
   border-radius:10px;
   text-align:center;
-  color:white;
 }
-.slide-card.active {
-  opacity: 1;
-  transform: translateY(0);
-}
+.slide-card.active { opacity:1; transform: translateY(0); }
 
+/* Floating icons */
+.whatsapp-btn, .phone-btn {
+  position: fixed;
+  left: 15px;
+  border-radius:50%;
+  font-size:22px;
+  padding:14px;
+  color:#fff;
+  z-index:1000;
+}
+.whatsapp-btn { top:90px; background:#25d366; }
+.phone-btn { top:150px; background:#2F80ED; }
